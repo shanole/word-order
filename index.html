@@ -5,9 +5,24 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Document</title>
+  <title>Word Order</title>
 </head>
 <body>
-  
+  <div class="container">
+    <form id="userInputForm">
+      <div class="form-group">
+        <label for="userInput">Tell me a nice story!</label>
+        <input id="userInput" class="form-control" type="text" required>
+      </div>
+
+      <button class="btn-success" type="submit">Submit</button>
+    </form>
+    <br>  
+    <div id="results">
+      <p>List of unique words:</p>
+      <ul id="resultsList">
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
